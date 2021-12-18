@@ -44,6 +44,14 @@
               class="styled-select"
               onchange="quiz.select_change()"
             >
+              <option value="01" class="service-small">99_01</option>
+              <option value="02" class="service-small">99_02</option>
+              <option value="03" class="service-small">99_03</option>
+              <option value="04" class="service-small">99_04</option>
+              <option value="05" class="service-small">99_05</option>
+              <option value="06" class="service-small">99_06</option>
+              <option value="07" class="service-small">99_07</option>
+              <option value="08" class="service-small">99_08</option>
               <option value="09" class="service-small">99_09</option>
             </select>
           </td>
@@ -63,10 +71,9 @@
     <div class="quiz_box">
       <header>
         <div class="title">Ben 的測驗程式</div>
-
         <div class="timer">
           <div class="time_left_txt">還剩</div>
-          <div class="timer_sec">15</div>
+          <div class="timer_sec">60</div>
           <div class="time_left_txt">秒</div>
         </div>
         <div class="time_line"></div>
@@ -76,13 +83,6 @@
           <!-- Here I've inserted question from JavaScript -->
         </div>
         <div class="option_list">
-          <!-- Here I've inserted options from JavaScript -->
-        </div>
-        <div class="correct_list">
-          <p></p>
-          <!-- Here I've inserted options from JavaScript -->
-        </div>
-        <div class="select_list">
           <!-- Here I've inserted options from JavaScript -->
         </div>
       </section>
@@ -113,6 +113,6 @@
     <script src="js/store_hist.js"></script>
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js?timestamp=" + new Date().getTime()></script>
   </body>
 </html>
