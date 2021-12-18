@@ -1,0 +1,118 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>測驗 | Ben</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAweome CDN Link for Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- (B) QUIZ CONTAINER -->
+    <div id="quizHeader">
+      <table
+        border="1"
+        cellpadding="2"
+        style="
+          position: relative;
+          border: 2px #00dbdb solid;
+          text-align: rignt;
+          right: 0;
+        "
+      >
+        <tr>
+          <td>
+            <select
+              id="category"
+              class="styled-select"
+              onchange="quiz.select_change()"
+            >
+              <option value="math" class="service-small">數學</option>
+            </select>
+          </td>
+          <td>
+            <select
+              id="level"
+              class="styled-select"
+              onchange="quiz.select_change()"
+            >
+              <option value="09" class="service-small">99_09</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="score_hist" style="font-family: Courier, monospace">
+      01 <br />
+      02 <br />
+      03 <br />
+      <!-- Here I've inserted Score Result from JavaScript -->
+    </div>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>開始測驗</button></div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Ben 的測驗程式</div>
+
+        <div class="timer">
+          <div class="time_left_txt">還剩</div>
+          <div class="timer_sec">15</div>
+          <div class="time_left_txt">秒</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- Here I've inserted question from JavaScript -->
+        </div>
+        <div class="option_list">
+          <!-- Here I've inserted options from JavaScript -->
+        </div>
+        <div class="correct_list">
+          <p></p>
+          <!-- Here I've inserted options from JavaScript -->
+        </div>
+        <div class="select_list">
+          <!-- Here I've inserted options from JavaScript -->
+        </div>
+      </section>
+
+      <!-- footer of Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Here I've inserted Question Count Number from JavaScript -->
+        </div>
+        <button class="next_btn">下一題</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <!-- Here I've inserted Score Result from JavaScript -->
+      </div>
+      <div class="complete_text">你完成測驗了!</div>
+      <div class="score_text">
+        <!-- Here I've inserted Score Result from JavaScript -->
+      </div>
+      <div class="buttons">
+        <button class="restart">重新作答</button>
+        <button class="quit">離開測驗</button>
+      </div>
+    </div>
+    <script src="js/store_hist.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
